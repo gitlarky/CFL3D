@@ -1,0 +1,3 @@
+#!/bin/bash
+echo "# add CFL3D executables to PATH">>$HOME/.bashrc
+echo "export PATH=$PWD:\$PATH">>$HOME/.bashrc
