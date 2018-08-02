@@ -1,2 +1,5 @@
 CFL3D 6.7.0
 	Using .grd grid files
+CFL3D 6.7.1
+	Modified source/cfl3d/dist/main.F Line 548
+	So that the new version read .xyz format mesh files instead of .grd file now
