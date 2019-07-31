@@ -22,4 +22,4 @@ cd ..
 rm -rf cfl3d
 cd /opt/CFL3D
 echo "# Add CFL3D executables to PATH">>$HOME/.bashrc
-echo "export PATH=$PWD/build/bin:\$PATH">>$HOME/.bashrc
+echo 'export PATH=/opt/CFL3D/build/bin:$PATH'>>$HOME/.bashrc
