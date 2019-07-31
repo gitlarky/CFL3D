@@ -17,7 +17,7 @@ cmake ../
 make -j 8
 # 3: Move compiled file into /opt and set environment
 cd ../../
-sudo move -rf CFL3D /opt/
+sudo cp -rf CFL3D /opt/
 cd ..
 rm -rf cfl3d
 cd /opt/CFL3D
