@@ -12,11 +12,13 @@ cd cfl3d
 got clone git@github.com:gitlarky/CFL3D.git
 cd CFL3D/external
 ./build_cgns
-cd ../build
+cd ..
+mkdir build
+cd build
 cmake ../
 make -j 8
 # 3: Move compiled file into /opt and set environment
-cd ../../
+cd $HOME/cfl3d
 sudo cp -rf CFL3D /opt/
 cd ..
 rm -rf cfl3d
