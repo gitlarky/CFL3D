@@ -8,7 +8,7 @@ sudo apt-get install libopenmpi-dev gfortran build-essential cmake git
 cd $HOME
 mkdir cfl3d
 cd cfl3d
-got clone git@github.com:gitlarky/CFL3D.git
+git clone https://github.com/gitlarky/CFL3D
 cd CFL3D/external
 ./build_cgns
 cd ..
