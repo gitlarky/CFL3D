@@ -2,7 +2,6 @@
 #
 # How to Install Under Linux
 #
-
 # 1: Install Compilation Tools
 sudo apt-get install libopenmpi-dev gfortran build-essential cmake git
 # 2: Compile it under $HOME Directory
