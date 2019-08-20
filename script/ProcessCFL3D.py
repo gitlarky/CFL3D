@@ -1,6 +1,6 @@
 #==================================================================================================
-# Title      : PostProcessing
-# Description: Postprocessing script for CFD softwares
+# Title      : ProcessCFL3D
+# Description: Pre & Post Process CFL3D Files
 # Author     : Zhenyu Xu; westlark@outlook.com
 # Start Time : 2019.08.01
 # License    : MIT
