@@ -16,7 +16,7 @@ The CFL3D platform is licensed under the Apache License, Version 2.0 (the "LICEN
 #### CFL3D 6.7.2
 - [x] Added some bash files to facilitate the installation under Linux
 #### CFL3D 6.7.1
-- [x] To facilitate the ICEM-CFL3D workflow, the formatted 'cfl3d.grd' mesh file format is dropped, instead unformated 'cfl3d.xyz' is used. (odified source/cfl3d/dist/main.F Line 548)
+- [x] To facilitate the ICEM-CFL3D workflow, the formatted 'cfl3d.grd' mesh file format is dropped, instead unformated 'cfl3d.xyz' is used. (Modified source/cfl3d/dist/main.F Line 548)
 #### CFL3D 6.7.0
 - [x] Original version inherited from NASA CFL3D opensource version
 
