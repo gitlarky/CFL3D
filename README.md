@@ -7,7 +7,7 @@ A structured-grid, cell-centered, upwind-biased, Reynolds-averaged Navier-Stokes
 ## Description
 
 Originally Developed by NASA Langley Computation Fluid Lab (CFL). It can be run in parallel on multiple grid zones with point-matched, patched, overset, or embedded connectivities. Both multigrid and mesh sequencing are available in time-accurate or steady-state modes.
-The most up-to-date information can be found on the web at: https://cfl3d.larc.nasa.gov
+The most up-to-date information can be found on the web at: https://cfl3d.larc.nasa.gov.
 
 Copyright 2001 United States Government as represented by the Administrator of the National Aeronautics and Space Administration. All Rights Reserved.
 
