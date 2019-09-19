@@ -1,0 +1,123 @@
+  $GLOBAL
+    FRINGE =  2 ,
+    QUALITY = 1.0, 0.2, -0.4,
+    EPS = 0.005,
+    CENTER = .TRUE.,
+ 				$END
+  $DIAG
+    ORPHLIST = .TRUE.,
+    DIAGFILE = .TRUE.,
+                                $END
+  
+  $MESH NAME = 'wing',
+ 				$END
+  
+  $MESH NAME = 'box1',
+                                 $END
+  
+  $MESH NAME = 'box2',
+                                 $END
+
+
+ $BOUNDARY NAME = 'HOLE IN BOX2',
+   ISPARTOF = 'box1',
+   MHOLEIN = 'box2',
+                                $END
+      $SURFACE ISPARTOF = 'HOLE IN BOX2',
+         JRANGE =  13, 13,
+         KRANGE =   7, -7,
+         LRANGE =   1, -1,
+         NVOUT = '-J',
+                                $END
+      $SURFACE ISPARTOF = 'HOLE IN BOX2',
+         JRANGE = -11,-11,
+         KRANGE =   7, -7,
+         LRANGE =   1, -1,
+         NVOUT = '+J',
+                                $END
+      $SURFACE ISPARTOF = 'HOLE IN BOX2',
+         JRANGE =  13,-11,
+         KRANGE =   7,  7,
+         LRANGE =   1, -1,
+         NVOUT = '-K',
+                                $END
+      $SURFACE ISPARTOF = 'HOLE IN BOX2',
+         JRANGE =  13,-11,
+         KRANGE =  -7, -7,
+         LRANGE =   1, -1,
+         NVOUT = '+K',
+                                $END
+ $BOUNDARY NAME = 'HOLE IN BOX1',
+   ISPARTOF = 'wing',
+   MHOLEIN = 'box1',
+                                $END
+      $SURFACE ISPARTOF = 'HOLE IN BOX1',
+         JRANGE =   7,  7,
+         KRANGE =   7, -7,
+         LRANGE =   1, -1,
+         NVOUT = '-J',
+                                $END
+      $SURFACE ISPARTOF = 'HOLE IN BOX1',
+         JRANGE =  -7, -7,
+         KRANGE =   7, -7,
+         LRANGE =   1, -1,
+         NVOUT = '+J',
+                                $END
+      $SURFACE ISPARTOF = 'HOLE IN BOX1',
+         JRANGE =   7, -7,
+         KRANGE =  -7, -7,
+         LRANGE =   1, -1,
+         NVOUT = '+K',
+                                $END
+
+ $BOUNDARY NAME = 'WING OUTER BOUNDARY'
+   ISPARTOF = 'wing',
+ $END
+
+      $SURFACE ISPARTOF = 'WING OUTER BOUNDARY',
+         JRANGE =    1,  -1,
+         KRANGE =   -3,  -1,
+         LRANGE =    1,  -1,
+      $END
+
+      $SURFACE ISPARTOF = 'WING OUTER BOUNDARY',
+         JRANGE =    1,   3,
+         KRANGE =    1,  -1,
+         LRANGE =    1,  -1,
+      $END
+
+      $SURFACE ISPARTOF = 'WING OUTER BOUNDARY',
+         JRANGE =   -3,  -1,
+         KRANGE =    1,  -1,
+         LRANGE =    1,  -1,
+      $END
+
+ $BOUNDARY NAME = 'BOX1 OUTER BOUNDARY'
+
+   ISPARTOF = 'box1',
+ $END
+
+      $SURFACE ISPARTOF = 'BOX1 OUTER BOUNDARY',
+         JRANGE =    1,  -1,
+         KRANGE =   -3,  -1,
+         LRANGE =    1,  -1,
+      $END
+
+      $SURFACE ISPARTOF = 'BOX1 OUTER BOUNDARY',
+         JRANGE =    1,   3,
+         KRANGE =    1,  -1,
+         LRANGE =    1,  -1,
+      $END
+
+      $SURFACE ISPARTOF = 'BOX1 OUTER BOUNDARY',
+         JRANGE =   -3,  -1,
+         KRANGE =    1,  -1,
+         LRANGE =    1,  -1,
+      $END
+
+      $SURFACE ISPARTOF = 'BOX1 OUTER BOUNDARY',
+         JRANGE =    1,  -1,
+         KRANGE =    1,   3,
+         LRANGE =    1,  -1,
+      $END
+
